@@ -11,11 +11,17 @@ func main() {
 	var num = 230
 	numEasy := 520
 	fmt.Printf("%T", numEasy)
-	fmt.Printf("%T", num)
+	fmt.Printf("%T %v", num, 15)
 	fmt.Println("Hello world", name, name2, number)
 	//all variables have default val
 	var defnum uint64
 	var bl bool
 	fmt.Println(defnum, bl)
 
+	//integer format
+	//get binary
+	fmt.Printf("\n Number : %b", 1152)
+	fmt.Printf("\n Number : %o", 1152)
+	fmt.Printf("\n Number : %d", 1152)
+	fmt.Printf("\n Number : %x", 1152)
 }
