@@ -87,6 +87,27 @@ func main() {
 	}
 	fmt.Println("after if")
 
+	//for loop
+	forx := 1
+	for forx <= 5 {
+		fmt.Println(forx)
+		forx++
+	}
+	//for different
+	for fory := 6; fory <= 10; fory++ {
+		fmt.Println(fory)
+	}
+	//break and continue with for
+	for forz := 0; forz <= 1000; forz++ {
+		if forz != 0 && forz%3 == 0 && forz%7 == 0 && forz%9 == 0 {
+			fmt.Println(forz)
+			continue
+		} else if (forz != 0) && (forz%3 == 1) && (forz%7 == 1) && (forz%9 == 1) {
+			fmt.Printf("THE NUM %d \n", forz)
+			break
+		}
+	}
+
 	//commented because to run below one
 	//console input
 	//scanner := bufio.NewScanner(os.Stdin)
