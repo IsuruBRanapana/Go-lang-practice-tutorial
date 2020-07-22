@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	//"math" this package to do more mathematical operations
 )
 
 func main() {
@@ -58,6 +59,13 @@ func main() {
 	//Sprint (store print fmt value in variable
 	var x string = fmt.Sprintf("\n Number Pad: %09f", 3435.15456231545132)
 	fmt.Println(x)
+
+	//arithmetic operation
+	//variables must in same type
+	var num1 int32 = 45
+	var num2 float32 = 5.6
+	answer := float32(num1) / num2
+	fmt.Printf("the answer is %.2f \n", answer)
 
 	//commented because to run below one
 	//console input
