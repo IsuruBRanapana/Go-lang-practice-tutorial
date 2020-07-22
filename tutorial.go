@@ -75,6 +75,18 @@ func main() {
 	val2 := ((true || false) && !true || 6 > 5) && true
 	fmt.Printf("%t \n", val2)
 
+	//if-else if
+	nametim := "tim"
+	fmt.Println("before if")
+	if nametim == "mit" {
+		fmt.Println("inside if")
+	} else if nametim == "tim" {
+		fmt.Println("second inside")
+	} else {
+		fmt.Println("no no")
+	}
+	fmt.Println("after if")
+
 	//commented because to run below one
 	//console input
 	//scanner := bufio.NewScanner(os.Stdin)
