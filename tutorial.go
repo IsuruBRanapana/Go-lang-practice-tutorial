@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+)
 
 func main() {
 	var name string = "Hello GO"
@@ -53,5 +58,20 @@ func main() {
 	//Sprint (store print fmt value in variable
 	var x string = fmt.Sprintf("\n Number Pad: %09f", 3435.15456231545132)
 	fmt.Println(x)
+
+	//commented because to run below one
+	//console input
+	//scanner := bufio.NewScanner(os.Stdin)
+	//fmt.Printf("Type Something : ")
+	//scanner.Scan()
+	//input := scanner.Text()
+	//fmt.Printf("You Typed : %q",input)
+
+	//covert input string in to int or something
+	scanner1 := bufio.NewScanner(os.Stdin)
+	fmt.Printf("Input Birth year")
+	scanner1.Scan()
+	newInput, _ := strconv.ParseInt(scanner1.Text(), 10, 64)
+	fmt.Printf("You will be %d years old at end of 2020", 2020-newInput)
 
 }
