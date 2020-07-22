@@ -67,6 +67,14 @@ func main() {
 	answer := float32(num1) / num2
 	fmt.Printf("the answer is %.2f \n", answer)
 
+	//condition and boolean operators
+	a := 5
+	b := 9.8
+	val := float64(a) >= b
+	fmt.Printf("%t \n ", val)
+	val2 := ((true || false) && !true || 6 > 5) && true
+	fmt.Printf("%t \n", val2)
+
 	//commented because to run below one
 	//console input
 	//scanner := bufio.NewScanner(os.Stdin)
