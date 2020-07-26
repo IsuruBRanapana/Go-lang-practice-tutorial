@@ -108,6 +108,19 @@ func main() {
 		}
 	}
 
+	//switch Statement
+	ams := 15
+	switch ams {
+	case 1:
+		fmt.Println("one")
+	case 2, -2:
+		fmt.Println("two or neg two")
+	default:
+		println("not one or two")
+	}
+
+	//arrays
+
 	//commented because to run below one
 	//console input
 	//scanner := bufio.NewScanner(os.Stdin)
