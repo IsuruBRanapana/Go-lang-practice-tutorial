@@ -120,6 +120,17 @@ func main() {
 	}
 
 	//arrays
+	var arr [5]int
+	arr[0] = 100
+	arr[4] = 55
+	fmt.Println(arr)
+
+	arr2 := [8]int{6, 7, 8}
+	fmt.Println(arr2)
+
+	//2D arrays
+	arr3 := [6][2]int{{1, 3}, {3, 5}}
+	fmt.Println(arr3[1][1])
 
 	//commented because to run below one
 	//console input
