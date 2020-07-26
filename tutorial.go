@@ -132,6 +132,17 @@ func main() {
 	arr3 := [6][2]int{{1, 3}, {3, 5}}
 	fmt.Println(arr3[1][1])
 
+	//slices
+	var arrs [5]int = [5]int{1, 2, 3, 4, 5}
+	var sl []int = arrs[1:3]
+	fmt.Println(sl)
+	fmt.Println(sl[1:])
+
+	var arrslice []int = []int{4, 8, 9, 7, 2}
+	fmt.Println(cap(arrslice[:3]))
+	arrslice = append(arrslice, 45)
+	fmt.Println(arrslice)
+
 	//commented because to run below one
 	//console input
 	//scanner := bufio.NewScanner(os.Stdin)
