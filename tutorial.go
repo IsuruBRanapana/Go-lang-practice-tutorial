@@ -143,6 +143,34 @@ func main() {
 	arrslice = append(arrslice, 45)
 	fmt.Println(arrslice)
 
+	//range and slice
+	var abc []int = []int{1, 2, 3, 4, 5, 6, 9, 8, 7, 4, 56}
+	for i := 0; i < len(abc); i++ {
+		fmt.Println(abc[i])
+	}
+	for i, element := range abc {
+		fmt.Printf("%d : %d \n", i, element)
+	}
+
+	for _, element := range abc {
+		fmt.Printf("%d \n", element)
+	}
+	//avoid duplicate
+	for i, element := range abc {
+		for j, element2 := range abc {
+			if element == element2 && i < j {
+				fmt.Println(element)
+			}
+		}
+		fmt.Println("abcda")
+		for j := i + 1; j < len(abc); j++ {
+			element2 := abc[j]
+			if element2 == element {
+				fmt.Println(element)
+			}
+		}
+	}
+
 	//commented because to run below one
 	//console input
 	//scanner := bufio.NewScanner(os.Stdin)
