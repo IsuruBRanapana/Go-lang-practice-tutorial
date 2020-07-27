@@ -8,6 +8,27 @@ import (
 	//"math" this package to do more mathematical operations
 )
 
+//functions
+//return single value
+func add(x, y int) int {
+	return x + y
+}
+
+//return multiple values
+func addAndSub(x, y int) (int, int) {
+	return x + y, x - y
+}
+
+//label multiple returns
+func addAndSub2(x, y int) (z1 int, z2 int) {
+	//defer execute after return value
+	defer fmt.Println("hello defer")
+	z1 = x + y
+	z2 = x - y
+	fmt.Println("before return")
+	return
+}
+
 func main() {
 	var name string = "Hello GO"
 	var name2 string
@@ -191,6 +212,16 @@ func main() {
 	//check value exist
 	valmap, ok := mp["apple"]
 	fmt.Println(valmap, ok)
+
+	//call function
+	answerFunc := add(21, 7)
+	fmt.Println(answerFunc)
+
+	answerFunc2, answerFunc3 := addAndSub(21, 7)
+	fmt.Println(answerFunc2, answerFunc3)
+
+	answerFunc4, answerFunc5 := addAndSub2(21, 7)
+	fmt.Println(answerFunc4, answerFunc5)
 
 	//commented because to run below one
 	//console input
