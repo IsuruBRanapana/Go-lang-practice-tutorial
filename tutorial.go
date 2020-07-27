@@ -171,6 +171,27 @@ func main() {
 		}
 	}
 
+	//Maps
+	var mp map[string]int = map[string]int{
+		"apple":  5,
+		"pear":   6,
+		"orange": 9,
+	}
+	fmt.Println(mp)
+
+	//alternative
+	mp1 := make(map[string]int)
+	mp["apple"] = 9000
+	fmt.Println(mp)
+	//add new value
+	mp1["abcd"] = 95
+	fmt.Println(mp1)
+	//delete value
+	delete(mp, "pear")
+	//check value exist
+	valmap, ok := mp["apple"]
+	fmt.Println(valmap, ok)
+
 	//commented because to run below one
 	//console input
 	//scanner := bufio.NewScanner(os.Stdin)
