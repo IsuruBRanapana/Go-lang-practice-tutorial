@@ -9,6 +9,10 @@ import (
 )
 
 //functions
+func test() {
+	fmt.Println("test")
+}
+
 //return single value
 func add(x, y int) int {
 	return x + y
@@ -222,6 +226,22 @@ func main() {
 
 	answerFunc4, answerFunc5 := addAndSub2(21, 7)
 	fmt.Println(answerFunc4, answerFunc5)
+
+	//advance function
+	//store function in a variable
+	funcx := test
+	funcx()
+
+	//another way
+	funcy := func() {
+		fmt.Println("funcy")
+	}
+	funcy()
+	//another way
+	funcz := func(z int) int {
+		return z * -1
+	}(9)
+	fmt.Println(funcz)
 
 	//commented because to run below one
 	//console input
