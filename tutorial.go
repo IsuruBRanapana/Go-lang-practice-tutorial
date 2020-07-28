@@ -243,6 +243,18 @@ func main() {
 	}(9)
 	fmt.Println(funcz)
 
+	//mutable and immutable data type
+	//immutable
+	var imx int = 5
+	imy := imx
+	fmt.Println(imx, imy)
+
+	//mutable
+	var mux []int = []int{3, 4, 5}
+	muy := mux
+	muy[0] = 100
+	fmt.Println(mux, muy)
+
 	//commented because to run below one
 	//console input
 	//scanner := bufio.NewScanner(os.Stdin)
